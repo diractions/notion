@@ -96,20 +96,20 @@ function displayGreetings(today){
         hrs = today.getHours();
         name="Harald"
         if (hrs < 12)
-            greet = 'Goedemorgen  '+name;
+            greet = 'Good morning  '+name;
         else if (hrs >= 12 && hrs <= 17)
-            greet = 'Goedemiddag '+name;
+            greet = 'Good afternoon '+name;
         else if (hrs >= 17 && hrs <= 24)
-            greet = 'Goedeavond  '+name;
+            greet = 'Good evening  '+name;
         document.getElementById('greet').innerHTML = greet;
 
     }
 
     function displayDate(today) {  
        
-        const days = ['Zondag', 'Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag'];
-        const monthNames = ["januari", "februari", "maart", "april", "mei", "juni",
-  "juli", "augustus", "september", "oktober", "november", "december"
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
 ];
 
         var dayName = days[today.getDay()];
